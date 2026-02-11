@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Vikash ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#ffd6e8,#e0f4ff);
+overflow:hidden;
+}
+
+.container{
+max-width:700px;
+margin:60px auto;
+background:rgba(255,255,255,.85);
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+text-align:center;
+}
+
+h1{
+color:#d63384;
+}
+
+p{
+line-height:1.7;
+font-size:17px;
+}
+
+button{
+padding:10px 25px;
+border:none;
+border-radius:20px;
+background:#d63384;
+color:white;
+cursor:pointer;
+margin-top:15px;
+}
+
+.secret{
+display:none;
+color:#d63384;
+font-weight:bold;
+margin-top:20px;
+}
+
+/* Floating Hearts */
+
+.heart{
+position:fixed;
+bottom:-10px;
+font-size:20px;
+animation:float 6s linear infinite;
+opacity:.7;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+100%{transform:translateY(-100vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎂 Happy 19th Birthday Vikash 🎂</h1>
+
+<p>
+My dearest jaaannnaa baachhhaa gadheduuu ❤️,<br><br>
+
+Happy Birthday to myyy littlee babyy  boyyy jisne pata nhii kab aur kaisee mere dil p raaz kr liyaaa 
+
+Jaaaannnnaaa, you are not just important to me — you ARE my comfort, my peace, my smile on hard days.  
+Every time I feel low, you somehow make things lighter just by existing. Jaaannnaaa just your mere existance makes my days 100times better and i thank god for giving mee thee worldss mosttt sweetest hottestt cuttesstt babyyy booyyyyy
+jaaannnnaaa i lovee youuu a lott baachhaa but few things that just makes me adore youu even moree like                                                                  i lovee  yourr eyess.                                                                                                                                                the way youu kisses me on videoo callss
+I love the way you care quietly.  
+I love your smile (please smile more).  
+I love your silly side.  
+I love how safe I feel with you.  
+I love your dreams.  
+I love YOU.
+😏💕
+
+</p>
+
+<button onclick="showSecret()">Reveal Secret 💌</button>
+
+<p class="secret" id="secret">
+I love you more than you know… and I want you closer than my hoodie on winter nights ❤️ AND AND ANDD                                                                       I have something else to say that isss i want us to break many beds ( oopppsss.. aapkoo tohh floor p sona pasand h with mattress tohh yehh plan tohh cancel krnaa padegaa n 😂😁)
+</p>
+
+</div>
+
+<script>
+// hearts animation
+setInterval(()=>{
+const heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="💗";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(15+Math.random()*20)+"px";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),6000);
+},400);
+
+function showSecret(){
+document.getElementById("secret").style.display="block";
+}
+</script>
+
+</body>
+</html>
